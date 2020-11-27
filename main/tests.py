@@ -31,3 +31,4 @@ class MainTestCase(TestCase):
         html_response = response.content.decode('utf8')
         self.assertIn("Hai namaku James.", html_response)
         self.assertIn("Kotak yang ada di sebelah kiri bisa kalian naik turunkan posisinya sesuka hati kalian.", html_response)
+        self.assertIn("Kalian bisa mendapatkan beberapa fakta menarik tentang saya disini.", html_response)
