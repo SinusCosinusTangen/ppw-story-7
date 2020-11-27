@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 import dj_database_url
 import os
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -23,7 +22,7 @@ PRODUCTION = os.environ.get('DATABASE_URL') != None
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'jzmhyam$^obj_*_n_rx-le^n3+tp915k633+#@+ye^w-g=eixx'
+SECRET_KEY = 'gwjr%as3n32#0f33!=2%w3f99dkjajnh#zr(yo)4g@3_otpg95'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -130,7 +129,3 @@ STATIC_URL = '/static/'
 
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
-
-STATICFILES_DIRS = [
-    BASE_DIR / "main/static",
-]
