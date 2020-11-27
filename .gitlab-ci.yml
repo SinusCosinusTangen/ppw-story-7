@@ -2,7 +2,7 @@ stages:
   - test
   - deploy
 
-Uncomment these lines if you would use tdd using selenium in your project
+# Uncomment these lines if you would use tdd using selenium in your project
 UnitTest:
   image: python:3.6
   stage: test
@@ -21,8 +21,8 @@ UnitTest:
     - python manage.py runserver 8000 &
   when: on_success
   script:
-    - coverage run manage.py test
-    - coverage report -m
+    - coverage run --include='my_app/*' manage.py test
+    - coverage report
 
 Deployment:
   image: ruby:2.4
